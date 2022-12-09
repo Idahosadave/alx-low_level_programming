@@ -1,17 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - printing the alphabet in reverse order
+ * main - Entry
  * Return: Always 0
  */
 int main(void)
 {
-	char lb;
+	char b;
 
-	for (lb = 'z'; lb >= 'a'; lb--)
-		putchar(le);
-
+	b = 'z';
+	while
+		(b >= 'a') {
+			putchar(b);
+			b--;
+		}
 	putchar('\n');
-
 	return (0);
 }
