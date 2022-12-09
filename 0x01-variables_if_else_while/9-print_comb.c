@@ -5,7 +5,7 @@
  * Return: Always 0
  */
 int main(void)
-	{
+{
 	int a;
 
 	for (a = 0; a < 58; a++)
