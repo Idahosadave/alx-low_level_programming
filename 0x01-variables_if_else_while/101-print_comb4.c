@@ -4,6 +4,7 @@
  * main - prints all possible different combinations of three digits
  * Return: Always 0
  */
+
 int main(void)
 {
 	int unit = '0';
@@ -30,6 +31,6 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n')
+	return (0);
 }
-putchar('\n')
-return (0);
