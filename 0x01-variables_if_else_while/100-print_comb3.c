@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry
  *
@@ -6,24 +7,29 @@
  */
 int main(void)
 {
-	int unit = '0';
-	int tens = '0';
+	int c;
+	int d = '0';
 
-	for (tens = '0'; tens <= '9'; tens++)/* prints tents digits*/
+	while (d < 10)
 	{
-		for (unit = '0'; unit <= '9'; unit++)/* prints unit digit*/
+		c = 0;
+		while (c < 10)
 		{
-			if (!((unit == tens) || (tens > unit)))/* eliminates repitition*/
+			if (d != c && d < c)
 			{
-				putchar(tens);
-				putchar(unit);
-				if (!(unit == '9' && tens == '&'))/* adds comma and spaces*/
+				purchar('0' + d);
+				putchar('0' + c);
+
+				if (c + d != 17)
 				{
 					putchar(',');
-					putchar(',');
+					putchar(' ');
 				}
 			}
+
+			c++;
 		}
+		d++;
 	}
 	putchar('\n');
 	return (0);
