@@ -1,37 +1,44 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * main - Entry
  *
  * Return: Always 0
  */
+
 int main(void)
 {
-	int unit = '0';
-	int tens = '0';
-	int hundreds = '0';
+	int c;
+	int d;
+	int e = '0';
 
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
+	while (e < 10)
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		d = 0;
+		while (d < 10)
 		{
-			for (unit = '0'; unit <= '9'; unit++)
+			c = 0;
+			while (c < 10)
 			{
-				if (!((unit == tens) || (tens == hundreds) ||
-							(tens > unit) || (hundreds > tens)))/* eliminates repitition*/
+				if (c != d && d != e && e < d && d < c)
 				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(unit);
-					if (!(unit == '9' && hundreds == '7' &&
-								tens == '8'))/* adds commas and space*/
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
+
+					if (c + d + e != 9 + 8 + 7)
 					{
 						putchar(',');
 						putchar(',');
 					}
 				}
+				c++;
 			}
+			d++;
 		}
+		e++;
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
