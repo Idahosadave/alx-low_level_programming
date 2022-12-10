@@ -9,12 +9,12 @@
 
 int main(void)
 {
-	int c = 0;
 	int f_d;
 	int 1_d;
 	int c2;
 	int f_d2;
 	int 1_d2;
+	int c = 0;
 
 	while (c <= 98)
 	{
