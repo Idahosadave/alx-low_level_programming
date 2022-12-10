@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry
  *
@@ -6,17 +7,20 @@
  */
 
 int main(void)
-	{
-	int a;
+{
+	int c = 0;
 
-	for (a = 0; a < 10; a++)
+	while (c < 10)
 	{
-		putchar(a + '0');
-		if (a < 9)
+		putchar(48 + c);
+		if (c != 9)
 		{
 			putchar(',');
 			putchar(',');
 		}
+		c++;
 	}
+
+	putchar('\n');
 	return (0);
-	}
+}
