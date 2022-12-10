@@ -1,31 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - Entry
+ *
  * Return: Always 0
  */
+
 int main(void)
 {
-	int i, j
+	int c = 0;
+	int f_d;
+	int 1_d;
+	int c2;
+	int f_d2;
+	int 1_d2;
 
-	for (i = 0; i < 100; i++)
+	while (c <= 98)
 	{
-		for (j = 0; j < 100; j++)
+		f_d = (c / 10 + '0');
+		1_d = (c % 10 + '0');
+
+		c2 = 0;
+
+		while (c2 <= 99)
 		{
-			if (i < j)
+			f_d2 = (c2 / 10 + '0');
+			1_d2 = (c2 % 10 + '0');
+
+			if (c < c2)
 			{
-				putchar((i / 10) + 48);
-				putchar((i % 10) + 48);
+				putchar(f_d);
+				putchar(1_d);
 				putchar(' ');
-				putchar((j / 10) + 48);
-				if (i != 98 || j != 99)
+				putchar(f_d2);
+				putchar(1_d2);
+
+				if (c != 98)
 				{
 					putchar(',');
-					putchar(',');
+					putchar(' ');
 				}
 			}
+			c2++;
 		}
+		c++;
 	}
+
 	putchar('\n');
 	return (0);
 }
