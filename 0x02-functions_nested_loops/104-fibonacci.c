@@ -3,11 +3,11 @@
 /**
  * numLenght - returns the length of string
  * @num : operand number
- * Description: numLenght - returns the length of string
+ * Description: 'fibonacci sequences'
  * Return: number of digits
  */
 
-int numLength(int num)
+int fibonacci(int num)
 {
 	int length = 0;
 
