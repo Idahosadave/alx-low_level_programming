@@ -1,6 +1,7 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
+ * fibonacci - prints the first 98 fibonacci number
  * @num : operand number
  * Description: 'fibonacci sequences'
  * Return: number of digits
