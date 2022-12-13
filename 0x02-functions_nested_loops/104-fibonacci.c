@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * fibonacci - returns the length of string
  * @num : operand number
  * Description: 'fibonacci sequences'
  * Return: number of digits
