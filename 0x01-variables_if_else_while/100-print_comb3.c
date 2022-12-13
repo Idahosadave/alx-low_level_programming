@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Entry
+ * main - 100-print_comb3.c
  *
  * Return: Always 0
  */
@@ -17,7 +17,7 @@ int main(void)
 		{
 			if (d != c && d < c)/*prints hundreds*/
 			{
-				purchar('0' + d);
+				putchar('0' + d);
 				putchar('0' + c);
 
 				if (c + d != 17)
