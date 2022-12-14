@@ -15,7 +15,7 @@ if (n < 0 || n > 15)
 
 while (a <= n)
 {
-	for (b = 0; b <= n; b++);
+	while (b = 0; b <= n; b++);
 	{
 		rep = a * b;
 		if (b == 0)
