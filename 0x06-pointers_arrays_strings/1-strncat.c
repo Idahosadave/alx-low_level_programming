@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strcat - joins two strings with n bytes
+ * _strncat - joins two strings with n bytes
  * @dest: copy to
- * @srt: copy from
+ * @src: copy from
  * @n: number of char to be copied
- * Reyurn: dest
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
