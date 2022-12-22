@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *rot13 - Encodes a string using rot 13
+ * rot13 - Encodes a string using rot 13
  * @str: the string to be ecncoded
  * Return: A pointer to the encoded string
  */
@@ -9,8 +9,7 @@ char *rot13(char *str)
 {
 	int indx1, indx2;
 
-	char alphabet[52] = {
-		'A', 'B', 'C', 'D', 'E', 'F',
+	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
 		'G', 'H', 'I', 'J', 'K', 'L',
 		'M', 'N', 'O', 'P', 'Q', 'R',
 		'S', 'T', 'U', 'V', 'W', 'X',
@@ -18,9 +17,8 @@ char *rot13(char *str)
 		'e', 'f', 'g', 'h', 'i', 'j',
 		'k', 'l', 'm', 'n', 'o', 'p',
 		'q', 'r', 's', 't', 'u', 'v',
-		'w', 'x', 'y', 'z' };
-	char ro13key[52] = {
-		'N', 'O', 'P', 'Q', 'R','S',
+		'w', 'x', 'y', 'z'};
+	char ro13key[52] = {'N', 'O', 'P', 'Q', 'R','S',
 		'T', 'U', 'V', 'W', 'X', 'Y',
 		'Z', 'A', 'B', 'C', 'D', 'E',
 		'F', 'G', 'H', 'I', 'J', 'K',
@@ -28,7 +26,7 @@ char *rot13(char *str)
 		'r', 's', 't', 'u', 'v', 'w',
 		'x', 'y', 'z', 'a', 'b', 'c',
 		'd', 'e', 'f', 'g', 'h', 'i',
-		'j', 'k', 'l', 'm' };
+		'j', 'k', 'l', 'm'};
 	while (str[++indx1])
 	{
 		for (indx2 = 0; indx2 < 52; indx2++)
