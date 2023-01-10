@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _strlen - get ends of input and add together for size
+ * @s: array of elements
  * Return: 1
  */
 
